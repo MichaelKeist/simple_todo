@@ -258,7 +258,7 @@ def main():
             stdscr.erase()
             new_name = input_setup(stdscr, 0, 0, "Enter item name (no special characters please!): ", 1).strip()
             new_date = input_setup(stdscr, 0 , 5, "Enter a date for the item (mm-dd-yyyy)", 1).strip()
-            new_note = repr(input_setup(stdscr, 0, 10, "Enter a note for the item (optional)", 15))
+            new_note = repr(input_setup(stdscr, 0, 10, "Enter a note for the item (optional)", 15j))
             new_note = new_note[1:len(new_note) - 1]
             if check_save(stdscr):
                 if name_validate(new_name) and date_validate(new_date):
